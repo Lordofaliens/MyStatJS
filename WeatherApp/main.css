@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	align-items: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.card{
+	background: rgba(0,  0,  0, 0.64);
+	color: white;
+	padding: 2em;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 600px;
+	margin: 1em; 
+}
+
+.search{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color:white;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #ffffff2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #aaaaaa2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #dedede6b;
+}
+
+.description,
+.temp,
+.humidity,
+.wind {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.search,
+.city,
+.temp,
+.humidity,
+.wind {
+	margin-bottom: 2vh;
+}
+
+.flex{
+	display:flex;
+	align-items: center;
+	margin-bottom: 2vh;
+}
+.temp{
+	font-size: 5vh;
+	font-style: bold;
+}
+
+
+
+.location,
+.temperature{
+	height: 30vh;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.degree-section{
+	display: flex;
+	align-items: center;
+	cursor: pointer;  
+}
+.degree-section span{
+	margin: 10px;
+	font-size: 5vh;
+}
+.degree-section h2{
+	font-size: 7vh;
+}
+
