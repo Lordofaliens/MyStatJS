@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Calculator</title>
+</head>
+<body>
+    <calculator>
+        <table>
+            <tr>
+                <td colspan="5">
+                    <h1>Calculate Me</h1>
+                </td>
+            </tr>
+            <tr class="zero-row">
+                <td colspan="4" class="input-cell">
+                    <input class="screen-input" placeholder="Enter"></input>
+                </td>
+                <td rowspan="6" class="history-cell">
+                    <history>
+                        <p class="history-title"><b>History of calculations</b></p>
+                        <div class="history-inner"></div>
+                    </history>
+                </td>
+            </tr>
+            <tr class="first-row">
+                <td colspan="2">
+                    <button class="AC">AC</button>
+                </td>
+                <td>
+                    <button class="CE">CE</button>
+                </td>
+                <td>
+                    <button class="CH">CH</button>
+                </td>
+            </tr>
+            <tr class="second-row">
+                <td>
+                    <button class="plus">+</button>
+                </td>
+                <td>
+                    <button class="minus">-</button>
+                </td>
+                <td>
+                    <button class="divide">/</button>
+                </td>
+                <td>
+                    <button class="multiply">*</button>
+                </td>
+            </tr>
+            <tr class="third-row">    
+                <td>
+                    <button class="one">1</button>
+                </td>
+                <td>
+                    <button class="two">2</button>
+                </td>
+                <td>
+                    <button class="three">3</button>
+                </td>
+                <td>
+                    <button class="four">4</button>
+                </td>
+            </tr>
+            <tr class="fourth-row">    
+                <td>
+                    <button class="five">5</button>
+                </td>
+                <td>
+                    <button class="six">6</button>
+                </td>
+                <td>
+                    <button class="seven">7</button>
+                </td>
+                <td>
+                    <button class="eight">8</button>
+                </td>
+            </tr>
+            <tr class="fifth-row">
+                <td>
+                    <button class="nine">9</button>
+                </td>
+                <td>
+                    <button class="zero">0</button>
+                </td>
+                <td colspan="2">
+                    <button class="equal">=</button>
+                </td>
+            </tr>
+        </table>   
+    </calculator>
+    <script src="./main.js"></script>
+</body>
+</html>
