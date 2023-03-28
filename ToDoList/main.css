@@ -1,0 +1,122 @@
+
+body{
+	background-color: #2C30A8;
+}
+	h1{
+	font-family: monospace;
+	font-size: 80pt;
+	color: #F59B71;
+	text-align: center;
+}
+h2{
+	font-family: monospace;
+	font-size: 40pt;
+	color: #F59B71;
+	text-align: center;
+}
+
+.flex-wrapper{
+	margin-left: 35%; 
+	margin-right: 35%; 
+	min-width: 30%;
+	flex-flow: column;
+	width: auto;
+}
+.todo-item{
+	min-width: 100%;
+	width: auto;
+	position: relative;
+	opacity: 1;
+	background-color: #F59B71;
+	border-radius: 5px;
+	margin-bottom: 10pt;
+	height: 30pt; 
+	color: #2C30A8;  
+	font-family: monospace;
+	font-size:15pt;
+	padding-top:7pt;
+	line-height: 20pt; 
+}
+.todo-item.checked {
+	opacity: 0.5;
+	background-color: #F59B71;
+}
+.buttons{
+	margin-top: -20pt;
+	position:inherit;
+	display: flex;
+	align-items:center;
+	justify-content: flex-end;
+}
+.btn-delete{
+	margin-right: 5pt;
+	font-family: monospace;
+	font-size:15pt;
+	background-color: crimson;
+	border-radius: 5px;
+	border: solid;
+	color: white; 
+}
+.btn-delete:hover{
+background-color: #8F1B32;	
+}
+.btn-complete{
+	margin-right: 10pt;
+	transform:scale(2);
+}
+#description-task{
+	width: 100%;
+	height: 25pt;
+	border-radius: 5pt;
+	color: #2C30A8;
+	font-size: 15pt;
+}
+#add-task-btn{
+	font-family: monospace;
+	width: 50%;
+	text-align: center;
+	margin-left:25%;
+	margin-right:25%;
+	border-radius: 10px;
+	border: 2px solid #F59B71; 
+	background-color: #72F540;
+	color: #2C30A8;
+	font-size:20pt;
+	-webkit-transition-duration: 0.4s; 
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	 cursor: pointer;
+}
+#add-task-btn:hover{
+	background-color: #2C30A8;
+	color: #72F540;
+}
+#add-task-btn:focus{
+outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+    0 0 0 1.5px rgba(255, 105, 180, 0.5);
+  }
+.todo-item.delition {
+    animation: opacity 1s ease-in-out;
+}
+
+@keyframes opacity{
+	from{
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+
+.btn-complete:hover{
+  border-color: #b3d7ff;
+}
+.btn-complete:active{
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+  border-radius: 50px;
+}
+.btn-complete:focus{
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
