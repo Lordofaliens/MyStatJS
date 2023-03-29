@@ -1,0 +1,75 @@
+body {
+    min-width: 400px !important;
+    width: 100%;
+    background: #f0ead8;
+    font-family: Roboto;
+    margin: 0;
+    color: #26241e;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.InputStock{
+    width: 50vw;
+    height: 40px;
+    font-size: 20px;
+    color: #58564f;
+    background-color: #d5d0c0;
+    border: 2px solid #26241e;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    padding: 1vw;
+}
+
+.InputStock::placeholder{
+    color: #58564f;
+}
+.up, .down, .pinImg, .crossImg{
+    width: 30px;
+}
+.arrowDiv, .pin, .cross{
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.stockItem{
+    position: relative;
+    width: 80vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid #26241e;
+    border-radius: 5px;
+    margin: 2vh;
+    padding: 1vw;
+}
+.pinnedStockItem{
+    position: relative;
+    width: 80vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid #26241e;
+    border-radius: 5px;
+    margin: 2vh;
+    padding: 1vw;
+    background-color: #d5d0c0;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: row;
+}
+.rotated{
+    transform:rotate(-90deg);
+}
