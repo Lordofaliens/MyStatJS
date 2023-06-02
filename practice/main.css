@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    min-height: 100vh;
+    background-color: #4D2D52;
+    color: #9A4C95;
+    font-size: 12px;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#film-search-input {
+    padding: 5px;
+    color: white;
+    background-color: #9A4C95;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#film-search-input:hover {
+    background-color: #d76bd0;
+}
+
+#film-search-input::placeholder {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#film-search-button {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#film-search-button, #set-default, #open-watchlist, #clear-watchlist {
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#film-search-button:hover,
+#set-default:hover,
+#open-watchlist:hover,
+#clear-watchlist:hover {
+    color: white;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#films-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.film-container {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C1A5A9;
+    border-radius: 10px;
+}
+
+.film-decription-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.film-rank-year {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.film-name, .film-source, .film-actors {
+    text-align: center;
+}
+
+.film-image {
+    max-width: 125px;
+    max-height: 175px;
+    border-radius: 10px;
+}
+
+.film-name {
+    font-size: 1.1rem;
+    margin: 5px 0 10px 0;
+}
+
+.film-actors {
+    font-family: cursive;
+}
+
+.film-rank {
+    color: gold;
+}
+
+#random-film-title {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.film-watchlater-btn {
+    width: auto;
+    background-color: transparent;
+    color: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
