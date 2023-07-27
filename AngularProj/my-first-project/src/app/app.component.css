@@ -1,0 +1,47 @@
+.counter-title {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.counter-btn {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: beige;
+    cursor: pointer;
+}
+
+.counter-container, .num-container, .user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0FAD5;
+}
+
+.number {
+    margin: 10px;
+    padding: 10px;
+    background: beige;
+    border-radius: 10px;
+}
+
+.text {
+    margin: 0;
+    text-align: center;
+}
+
+.user {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background: #f5f5dc;
+    border-radius: 10px;
+}
+
+.user > p {
+    margin: 2px;
+}

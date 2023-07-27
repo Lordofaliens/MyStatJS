@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UserDataBase</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="inputs">
+      <div class="entries">
+        <h1>ENTER&EDIT</h1>
+        <div class="dinput">
+          <input type="text" id="name" name="name" placeholder="User`s name" />
+          <label for="name" class="form__label">Name</label>
+        </div>
+        <div class="dinput">
+          <input type="text" id="age" name="age" placeholder="User`s age" />
+          <label for="age" class="form__label">Age</label>
+        </div>
+        <div class="dinput">
+          <input type="text" id="city" name="city" placeholder="User`s city" />
+          <label for="city" class="form__label">City</label>
+        </div>
+        <button id="create">Create User</button>
+      </div>
+      <div class="sortSearch">
+        <h1>SEARCH&SORT</h1>
+        <div class="search">
+          <div class="dinput">
+            <input type="text" id="search" name="search" placeholder="Search users" />
+            <label for="search" class="form__label">Search</label>
+          </div>
+        </div>
+        <div class="sortContainer">
+          <label>
+            <input type="checkbox" id="sort-by-name"/>
+            <span>Sort by name</span>
+          </label>
+          <label>
+            <input type="checkbox" id="sort-by-age" />
+            <span>Sort by age</span>
+          </label>
+          <label>
+            <input type="checkbox" id="sort-by-city" />
+            <span>Sort by city</span>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section class="last-button">
+      <button class="openBtn"><img  src="./img/bookmark.png"></button>
+      <aside class="sidebar">
+        <div class="last-operations-inner"></div>
+      </aside>
+    </section>
+    <section id="users-section"></section>
+    <section id="paginationContainer">
+      <div id="pagination"></div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    min-width: 90px !important;
+    width: 100%;
+    background: #ffe873;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #807439;
+}
+h1{
+    font-size: 40px;
+}
+input, button{
+    background-color: transparent;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+calculator{
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table td{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+button.active, .first-row td:hover, .second-row td:hover, .third-row td:hover, .fourth-row td:hover, .fifth-row td:hover{
+    border-radius: 50px;
+    background-color: #F4B400;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.input-cell{
+    background-color: aliceblue;
+}
+.screen-input{
+    width: 200px;
+    height: 50px;
+}
+.CE, .CH, .plus, .minus, .divide, .multiply, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine{
+    width: 50px;
+    height: 50px;
+}
+.equal, .AC{
+    width: 100px;
+    height: 50px;
+}
+
+.history-cell{
+    min-width: 250px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.history-title{
+    font-size: 30px;
+    text-align: center;
+    margin: -150px 10px 10px 10px;
+}
+.history-text{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

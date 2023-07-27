@@ -1,0 +1,25 @@
+.users-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-nav {
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0FAD5;
+}
+
+.users-nav > * {
+    margin: 50px;
+}
+
+.users-nav > p {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}

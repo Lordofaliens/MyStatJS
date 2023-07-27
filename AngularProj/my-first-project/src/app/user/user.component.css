@@ -1,0 +1,29 @@
+.user-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #4c4a40;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    min-height: 250px;
+    justify-content: center;
+    background-color: #E0FAD5;
+}
+
+.user-item button {
+    color: white;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    background-color: #71cb4b;
+    transition: 0.3s all ease-in-out;
+}
+
+.user-item button:hover {
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    background-color: #3f712a;
+}

@@ -1,0 +1,25 @@
+
+<h1 style="text-align: center; font-weight: bold;">Users</h1>
+<div class="users-nav">
+  <input type="text" [value]="searchValue" (input)="onInput($event)" placeholder="search me"/>
+  
+  <button *ngIf="!isSortedA" (click)="onSortClick('a')" class="btn btn-danger m-1">Alphabetic Sort</button>
+  <button *ngIf="isSortedA" (click)="onSortClick('a')" class="btn btn-danger m-1">Reversed Sort</button>
+  
+  <button *ngIf="!isSortedB" (click)="onSortClick('b')" class="btn btn-danger m-1">Latitude Sort</button>
+  
+  <!-- added lat sort -->
+  <button *ngIf="isSortedB" (click)="onSortClick('b')" class="btn btn-danger m-1">Reversed Sort</button>
+</div>
+
+
+<div class="users-wrapper">
+  <app-user
+    *ngFor="
+      let user of searchValue
+        ? usersService.searchResult
+        : usersService.sortedUsers
+    "
+    [user]="user"
+  ></app-user>
+</div>

@@ -1,0 +1,25 @@
+<h1 style="text-align: center; font-weight: bold;">{{ title }}</h1>
+<div class="counter-container">
+  <h2 class="counter-title">Counter: {{ counter }}</h2>
+  <button class="counter-btn" (click)="increment()">Increment</button>
+  <button class="counter-btn" (click)="decrement()">Decrement</button>
+  <button class="counter-btn" (click)="reset()">Reset</button>
+</div>
+<main>
+  <div class="num-container">
+    <p class="text title">NUMBER COMPONENT</p>
+    <div class="number" *ngFor="let num of numbers">
+      <p class="text">{{ num }}</p>
+    </div>
+  </div>
+  
+  <div class="user-container">
+    <p class="text title">USER COMPONENT</p>
+    <div class="user" *ngFor="let user of users">
+      <p>{{ user.name }}</p>
+      <p>{{ user.age }}</p>
+    </div>
+  </div>
+
+  <app-users></app-users>
+</main>

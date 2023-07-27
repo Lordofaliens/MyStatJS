@@ -1,0 +1,27 @@
+<div class="user-item card" *ngIf="user">
+  <div *ngIf="!isUserDataEditing">
+    <p>name: {{ user.name }}</p>
+    <p>email: {{ user.email }}</p>
+    <p>phone: {{ user.phone }}</p>
+    <p>street: {{ user.address.street }}</p>
+    <p>lat: {{ user.address.geo.lat }}</p>
+  </div>
+  <!-- FIX THIS convert to UnionUserType[] from string[]-->
+  <app-user-edit-form
+    *ngIf="isUserDataEditing"
+    [user]="user"
+    [editFields]="getEditFields()"
+  ></app-user-edit-form>
+
+  <button (click)="toggleIsUserDataEditing()">Edit (only strings)</button>
+
+  <!-- <p *ngIf="isShowUserData">
+    {{ user.age }}
+  </p> -->
+  <!-- <button (click)="showAndHideUserData()">Hide private data</button> -->
+
+  <!-- <div *ngFor="let location of user.locations">
+    <p>{{ location.title }}</p>
+    <span>{{ location.lat }}</span>
+  </div> -->
+</div>

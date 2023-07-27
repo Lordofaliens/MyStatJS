@@ -1,0 +1,2 @@
+C:\Users\vlada\source\repos\HW\obj\Debug\HW.esproj.SuggestedBindingRedirects.cache
+C:\Users\vlada\source\repos\HW\obj\Debug\HW.esproj.CoreCompileInputs.cache
