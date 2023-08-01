@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Roboto;
+    background: radial-gradient(circle at center, #e52e71, #ff8a00);
+}
+
+container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(40, 23, 116, 0.5);
+}
+
+header {
+    background-color: rgb(40, 23, 116);
+    border-radius: 5px 5px 0 0;
+    min-width: 125px;
+    width: 25vw;
+}
+
+p {
+    
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 125px;
+    width: 25vw;
+    background-color: rgb(56, 25, 128);
+    border-radius: 0 0 5px 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    min-width: 100px;
+    width: 20vw;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px grey solid;
+}
+
+errorHandler {
+    text-align: center;
+    min-height: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e52e71;
+}
+
+button {
+    min-width: 50px;
+    width: 10vw;
+    margin: 0.5rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
